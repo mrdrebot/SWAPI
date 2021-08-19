@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Requirements:</p>
+    <ol>
+      <% for (key in tasks) { %>
+        <li><%= tasks[key] %></li>
+      <% } %>
+    </ol>
+    <p>Test links:</p>
+    <ul>
+      <% for (key in links) { %>
+        <li><%= links[key] %></li>
+      <% } %>
+    </ul>
+  </body>
+</html>
